@@ -1,8 +1,4 @@
-# Advanced EV Battery Health Prediction
-
-![Battery Health](https://img.shields.io/badge/Status-Active-success)
-![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
-![PyTorch](https://img.shields.io/badge/Framework-PyTorch-orange)
+# Advanced EV Battery Health Prognostics
 
 ## 📌 Project Overview
 This project implements a **Physics-Informed Hybrid Attention LSTM** model to predict the **State of Health (SoH)** and **Full-Charge Range (FCR)** of Electric Vehicle batteries. By combining deep learning with known physical constraints (monotonic degradation, knee-points), the system achieves high accuracy and reliability, suitable for Battery Management Systems (BMS).
@@ -36,10 +32,14 @@ Detailed documentation is available in the `Documentation/` folder:
     *   **Generate Data:** Run the simulation cell to create `battery_data.csv`.
     *   **Train:** Execute training cells to optimize the LSTM model.
     *   **Evaluate:** View predictions, uncertainty plots, and error metrics.
+  
+4.  About the dataset:
+   - this dataset is a hyper-realistic and accurate replica of the NASA Li-Ion battery data
+   - inspired using multiple different versions of NASA data from kaggle (cleaned & un-cleaned both)
 
 ## 📊 Results Snapshot
 *   **SoH Prediction Accuracy (R²):** > 0.99
 *   **Main Degradation Drivers:** Charging Patterns, Driving Style, and Depth of Discharge (DoD).
 
-## 📄 License
-[MIT License](LICENSE) (or applicable license)
+
+
